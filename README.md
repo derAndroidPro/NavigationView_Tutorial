@@ -8,6 +8,13 @@ Lollipop Navigation Drawer Tutorial (wird als <b> Grundlage für dieses Projekt<
 - YouTube: https://youtu.be/P96IT9s3Tts
 - Github: https://github.com/derAndroidPro/Lollipop_NavigationDrawer_Tutorial
 
+Gradle Zeile für die Android Design Library:  
+```
+compile 'com.android.support:design:22.2.0'
+```
+
+
+
 <b>SCREENSHOTS:</b>
 
 <img src="https://github.com/derAndroidPro/NavigationView_Tutorial/blob/master/device-2015-07-18-144035.png" height="500px"/>
