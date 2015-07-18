@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/drawerlayoutgesamt"
+        >
+
+        <!-- Activity Layout-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/activitylayout"
+
+            >
+
+            <!-- INFORMATION (Commit 16.05.2015)
+            schreibt die Zeile  android:fitsSystemWindows="true"  besser bei der ToolBar,
+            und NICHT beim ganzen Layout, damit die Transparente Statusleise die Farbe der ToolBar erhält! :)
+            -->
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar1"
+                android:background="#ffd3d3d3"
+                android:fitsSystemWindows="true"
+
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/ivAnzeige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mood_grey600_18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                />
+
+
+            </RelativeLayout>
+
+
+        <!-- Drawer Layout -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/drawerlayoutsingle"
+            android:layout_gravity="start"
+            android:background="#fff"
+            >
+
+         <android.support.design.widget.NavigationView
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:id="@+id/navView"
+            app:menu="@menu/navigation_view_menu"
+
+             app:itemIconTint="@color/itemtintcolor"
+             app:itemTextColor="@color/itemtintcolor"
+             app:headerLayout="@layout/headerlayout"
+             />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+</RelativeLayout>
