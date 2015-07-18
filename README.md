@@ -1,7 +1,7 @@
 # Navigation View Tutorial
 So designest du das Layout deines Navigation Drawers mithilfe des Navigation Views aus der Android Design Library!
 
-- Tutorial auf YouTube: 
+- Tutorial auf YouTube: http://youtu.be/bXKtM2belwo
 - Projekt für Android Studio
 
 Lollipop Navigation Drawer Tutorial (wird als <b> Grundlage für dieses Projekt</b> verwendet):
